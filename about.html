@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon.png" sizes="16x16">
+    <title>About Us</title>
+
+  </head>
+
+  <body onload="click()">
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand lg-brand" href="home.html">
+                        <img src="img/logo-spca.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand sm-brand" href="home.html">
+                        <img src="img/sm-spca.png" alt="logo">
+                    </a>
+                    <div class="donate-button">
+                        <a class="nav-link" href="donate.html">
+                            <img src="img/donatebutton.png" alt="donate">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Get Involved
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="adopt.html">Adopt</a>
+                            <a class="dropdown-item" href="volunteer.html">Volunteer</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="donate.html">Donate</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <!-- end of Navbar -->
+        <div class="clear"></div>
+    </header>
+    <!-- end of Header -->
+    
+    <!-- Back to top button -->
+    <div class="backtop">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="img/back2top.png" alt="top" style="width: 50px">
+        </button>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <div class="container">
+            <div class="content">
+                <div class="main-head">
+                    <h1 class="p-bold">About SPCA</h1>
+                    <img src="img/about-head.png" alt="header">
+                </div>
+                <button class="tablink" onclick="openPage('About', this, 'white')" id="defaultOpen">Who we are</button>
+                <button class="tablink" onclick="openPage('History', this, 'white')">History</button>
+                <!-- Tab 1 -->
+                <div id="About" class="tabcontent">
+                    <div class="text-head">
+                        <h3 class="h-color">Society for the Prevention of Cruelty to Animals (S.P.C.A.) International</h3>
+                        <h5>Mission Statement</h5>
+                        <p>To advance the safety and well-being of animals.</p>
+                        <h5>Vision Statement</h5>
+                        <p>Our vision is for all animals to live a life free of cruelty and suffering.</p>
+                        <h5>Values Statement</h5>
+                        <p>SPCA International embraces, above all, kindness, respect, compassion, awareness and integrity in all aspects of our mission and vision for a cruelty-free world.</p>
+                    </div>
+                    <hr>
+                    <div class="text-body">
+                        <img src="img/aboutimg.png" alt="about">
+                        <p>SPCA International works to stop the abuse and suffering of animals with innovative programs that serve both animals and their human caretakers.</p>
+                        <h5 class="h-color">VETERINARY SUPPLY AID (VSA) PROGRAM</h4>
+                        <p>SPCA International distributes critical veterinary medical supplies to animal welfare groups throughout the world. As a result, organizations in developing countries have been able to treat more sick and injured animals. SPCA International has distributed millions of dollars in veterinary supplies and medication to shelters on almost every continent.</p>
+                        <h5 class="h-color">SHELTER SUPPORT FUND</h4>
+                        <p>SPCA International serves and partners with shelters, rescue groups and governments around the world. Through these unique and pioneering partnerships local organizations are able to rescue, treat, rehabilitate, feed, sterilize and home more animals than ever before. </p>
+                        <h5 class="h-color">MILITARY SUPPORT PROGRAMS</h4>
+                        <p>Operation Baghdad Pups: Worldwide and Operation Military Pets serves dogs and cats beloved by members of the U.S. military, veterans and their families. With individual grants and extraordinary rescue efforts, SPCA International saves these beloved patriot pets and reunites them with their military friends. Learn More</p>
+                        <h5 class="h-color">EDUCATION INITIATIVES</h4>
+                        <p>SPCA International delivers important, actionable information to pet parents, animal activists and concerned citizens to help improve the lives of animals around the world. Serving as an information hub, SPCA International educates concerned citizens about a variety of animal welfare issues.</p>
+                        <hr>
+                        <h5 class="h-color">PEDIGREE CERTIFICATE OF RECOGNITION</h4>
+                        <p>In 2009, Mary Tyler Moore and Bernadette Peters from Broadway Barks presented SPCA International with the Pedigree Certificate of Recognition honoring the success of our popular program "Operation Baghdad Pups".</p>
+                        <h5 class="h-color">IN THE NEWS</h4>
+                        <p>Many publications and media outlets have featured our work including Fox News, the Early Show, The Washington Post, USA Today, CNN, hundreds of local NBC, ABC, CBS channels nationwide, Headline News, The Military Channel, Military Times, NY Daily News, NY Post, Los Angeles Times, Woman's World, Reuters, Associated Press, Guideposts, Forbes.com, ZooToo.com, Seattle PI and the Animal Planet shows "Must Love Cats" and "Underdog to Wonderdog".</p>
+                        <h5 class="h-color">MAILING ADDRESS</h4>
+                            <ul>
+                                <li>SPCA International</li>
+                                <li>P.O. Box 8682</li>
+                                <li>New York, NY 10001</li>
+                            </ul>
+                        <p>SPCA International is a 501(c)3 nonprofit organization.</p>
+                        <p class="p-italic">SPCA International is committed to efficiency and transparency. We communicate with our supporters, donors and prospective donors by email, postal mail and other means, both to request contributions and to educate the public about SPCA International's programs, important pet parenting tips, spay and neuter, animal rights and global animal welfare advocacy. These efforts support our mission to advance the safety and well-being of animals. As a result, in accordance with the Financial Accounting Standards Board (FASB) guidelines and Internal Revenue Service (IRS) guidance, SPCA International allocates a portion of our fundraising costs to program services. As a nonprofit organization that is exempt from federal taxation, we ensure our donors’ money is spent as efficiently and effectively as possible.</p>
+                        <p>Tax ID #87-0773320</p>
+                    </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="History" class="tabcontent">
+                    <img src="img/spca-banner-our-history.jpg" alt="history">
+                    <div class="text-body">
+                        <p>The first <b>Society for the Prevention of Cruelty to Animals (SPCA )</b> organized in England in 1824, primarily to prevent the abuse of carriage horses in the days before automobiles. Horses were driven through freezing cold winters and stiflingly hot summers, often with little food, water or rest. The carriage drivers were interested only in making as much money as possible, and would beat the horses if they refused to or were unable to pull the carriages.</p>
+                        <p>The SPCA helped to pass laws that regulated the carriage-horse business.  With this success, the Society expanded to include dogs and other animals in its fight against cruelty. The first American SPCA was started in 1866 in New York City. There are now SPCAs all over the U.S., and indeed, all over the world. </p>
+                        <p><b>SPCA International</b> was founded in the U.S. in 2006. The mission of our organization is simple but vast: to advance the safety and well-being of animals.</p>
+                        <p>The majority of local SPCAs and humane societies around the world are not affiliated with national organizations, as most people may presume. Therefore, SPCA International seeks to develop and utilize a worldwide platform that both supports independent animal shelters and promotes the safety of animals. SPCA International strives to assist the growth and impact of independent shelters through alliance building, information networking, national and international programs. </p>
+                        <p>In 2007, SPCA International launched our first major shelter initiative – Shelter of the Week.  SPCA International providesfinancial support at the local level by awarding four to six emergency grants every month to selected animal welfare organizations. These grants make a big difference to struggling shelters, both in the U.S. and worldwide, and help to improve physical conditions, enhance spay and neuter programs and ultimately reduce euthanasia rates.  From dog and cat rescues, to wildlife rehabilitation centers, to special needs recovery centers, to foster programs, SPCA International has extended support to shelters in almost every U.S. state, as well as to numerous international organizations.  And our support continues to expand.  </p>
+                        <p>SPCA International founded our second major initiative, Operation Baghdad Pups, at the request of many U.S. military personnel serving in Iraq and Afghanistan.  This program provides veterinary care, as well as clearance and transport, for the animals that U.S. service members have come to love during deployment in the Middle East.  Operation Baghdad Pups is an expensive and logistically challenging program, but it does more than save the lives of these animals; it also brings comfort and peace of mind to our U.S. soldiers serving overseas and helps them cope when they return home.  To date, SPCA International has helped hundreds of soldiers transport their animals out of the war zone.  We receive a minimum of three to four new requests every week and are currently working on approximately 50 active cases.  </p>
+                        <p><b>SPCA International</b> also runs a variety of education initiatives. Through the SPCA Answers program, SPCA International staff and volunteers provide a global information and referral resource that assists thousands of animal guardians and advocates.  The SPCA Answers team regularly receives and processes reports of animal cruelty and neglect and connects local volunteers with area shelters.  </p>
+                        <p>As we forge ahead, SPCA International plans to expand the scope of current programs, launch new initiatives, increase the number of shelter grants awarded and improve educational awareness throughout the coming years.  We are proud that this small international organization is making a big difference in the lives of animals throughout the world.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Main content -->
+    
+    <!-- Social Media Bar + Email Subscribe -->
+    <div class="social-bar container">
+        <div class="row">
+            <div class="col-md-9 subscribe-container">
+                <form onsubmit="inform_storage(); return false"">
+                    <div class="input-group"> 
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Subscribe to Newsletter:</span>
+                        </div>
+                        <input class="form-input" id="inputEmail" type="text" placeholder="Enter your email" required>
+                        <button class="form-button btn btn-outline-info" id="submitEmail" type="submit"">Subscribe</button>         
+                    </div>
+                </form>
+            </div>
+            <div class="social-icon col-md-3">
+                <a href="https://www.facebook.com/spcai" class="fa fa-facebook-square fa-2x"></a>
+                <a href="https://twitter.com/SPCAINT" class="fa fa-twitter-square fa-2x"></a>
+                <a href="https://www.instagram.com/spca_international/" class="fa fa-instagram fa-2x"></a>
+                <a href="https://www.youtube.com/user/SPCAI" class="fa fa-youtube-square fa-2x"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Nav + Copyright -->
+    <footer class="container-fluid" >
+        <div class="row">
+                <div class="col-md-7 nav justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adopt.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="volunteer.html">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="donate.html">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>                  
+                    </div>
+                    <div class="col-md-5 copyright">
+                        <p>© Copyright 2006-2018, SPCA International, Inc. All Rights Reserved.</p>
+                    </div>
+        </div>
+        
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+

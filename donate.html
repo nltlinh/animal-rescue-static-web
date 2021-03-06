@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon.png" sizes="16x16">
+    <title>Donate</title>
+
+  </head>
+  <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand lg-brand" href="home.html">
+                        <img src="img/logo-spca.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand sm-brand" href="home.html">
+                        <img src="img/sm-spca.png" alt="logo">
+                    </a>
+                    <div class="donate-button">
+                        <a class="nav-link" href="donate.html">
+                            <img src="img/donatebutton.png" alt="donate">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Get Involved
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="adopt.html">Adopt</a>
+                            <a class="dropdown-item" href="volunteer.html">Volunteer</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="donate.html">Donate</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <div class="clear"></div>
+    </header>
+    
+    <!-- Back to top button -->
+    <div class="backtop">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="img/back2top.png" alt="top" style="width: 50px">
+        </button>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+            <div class="container">
+                <div class="content">
+                    <div class="main-head">
+                        <h1><b>Make a Donation</b></h1>
+                    </div>
+                    <div class="main-body">
+                        <div class="text-head">
+                            <h3 class="p-bold p-italic">"Donations make the difference"</h4>
+                            <p>If you look at a map of the world and put your finger down on any place, on almost any continent, you would be pointing at hundreds of suffering animals. From companion animals, like dogs and cats, to wildlife and sea life, stopping abuse and suffering is a huge challenge.</p>
+                            <p>SPCA International meets that challenge head-on with innovative programs that serve both animals and their human caretakers.</p>
+                            <p class="p-bold">But we can’t save more lives without your help!</p>
+                        </div>
+                        <hr>
+                        <div class=row>
+                            <div class="col-md-7" id="donationForm" >
+                                <h3 class="h-color">Donation Form</h3>
+                                <div class="form">     
+                                    <form onsubmit="topFunction(),donate(); return false">
+                                        <label for="fname">First Name *</label>
+                                        <input type="text" id="fname" name="firstname" required>
+                                    
+                                        <label for="lname">Last Name *</label>
+                                        <input type="text" id="lname" name="lastname" required>
+                                        
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                        
+                                        <label for="paydetail"> Payment Details *</label>
+                                        <input type="text" id="cardnum" name="cardnum" placeholder="Card number: 1234-1234-1234-1234" required> 
+                                        <input type="text" id="exp" name="exp" placeholder="EXP: MM/YY" required>
+                                        <input type="text" id="cvc" name="cvc" placeholder="CVC: 123" required>
+
+                                        <label for="radio">Donation Amount *</label>
+                                        <div id="radio">
+                                            <input type="radio" id="radioc" name="amount" value="100" onclick="checkResult2(this.value)" checked > $100<br>
+                                            <input type="radio" id="radioc" name="amount" value="50" onclick="checkResult2(this.value)" > $50<br>
+                                            <input type="radio" id="radioc" name="amount" value="30" onclick="checkResult2(this.value)" > $30<br>
+                                            <input type="radio" id="radioc" name="amount" value="20" onclick="checkResult2(this.value)" > $20<br>
+                                            <input type="radio" id="radioc" name="amount" value="10" onclick="checkResult2(this.value)" > $10<br>
+                                            <input type="radio" id="radioc" name="amount" onclick="focusother()"> Custom Amount:<br>
+                                            <input type="text" id="other" name="other">
+                                        </div>
+                                        <input type="text" id="donateamount" style="display:none">
+                                        <label for="purchase">Select Payment Method *</label>
+                                        <p class="p-italic">(Drag your choice into the box)</p>
+                                        <div id="purchase">
+                                            <div id="dropElement" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                <img src="img/visa.png" draggable="true" ondragstart="drag(event)" id="visa" width="100%" height="100%" >
+                                            </div>
+                                            <div id="dropElement" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                <img src="img/master.png" draggable="true" ondragstart="drag(event)" id="master" width="100%" height="100%">
+                                            </div>
+                                            <div id="dropElement" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                <img src="img/paypal.png" draggable="true" ondragstart="drag(event)" id="paypal" width="100%" height="100%">
+                                            </div>
+                                            <i id="purArrow" class="fa fa-long-arrow-right"></i>
+                                            <div id="choice" ondrop="drop(event)" ondragover="allowDrop(event)" value="choice"></div>
+                                        </div>
+                                        <input type="text" id="purchasemethod" style="display:none">
+                                        <br>
+                                        <input type="submit"  value="DONATE">
+                                    </form>
+                                </div>
+                                         
+                            </div>
+                            
+                            <div class="col-md-5" id="moreInfo" >
+                                <p class="p-italic" style="padding: 20% 0 "><b>Noted:</b> You will be directed to <b>PayPal</b> to complete this secure transaction. You can use a PayPal account or make a credit card payment using PayPal. You will receive a confirmation from PayPal once the donation has been confirmed. Thank you for supporting <b>SPCA International.</b></p>
+                                <hr>
+                                <p class="p-bold h-color">Primary Mailing Address for all Correspondence and Donations:</p>
+                                <ul>
+                                    <li>SPCA International</li>
+                                    <li>P.O. Box 8682</li>
+                                    <li>New York, NY 10001</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+    <!-- end of Main Content -->
+
+    <!-- Social Media Bar + Email Subscribe -->
+    <div class="social-bar container">
+        <div class="row">
+            <div class="col-md-9 subscribe-container">
+                <form onsubmit="inform_storage(); return false"">
+                    <div class="input-group"> 
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Subscribe to Newsletter:</span>
+                        </div>
+                        <input class="form-input" id="inputEmail" type="text" placeholder="Enter your email" required>
+                        <button class="form-button btn btn-outline-info" id="submitEmail" type="submit"">Subscribe</button>         
+                    </div>
+                </form>
+            </div>
+            <div class="social-icon col-md-3">
+                <a href="https://www.facebook.com/spcai" class="fa fa-facebook-square fa-2x"></a>
+                <a href="https://twitter.com/SPCAINT" class="fa fa-twitter-square fa-2x"></a>
+                <a href="https://www.instagram.com/spca_international/" class="fa fa-instagram fa-2x"></a>
+                <a href="https://www.youtube.com/user/SPCAI" class="fa fa-youtube-square fa-2x"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Nav + Copyright -->
+    <footer class="container-fluid" >
+        <div class="row">
+                <div class="col-md-7 nav justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adopt.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="volunteer.html">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="donate.html">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>                  
+                    </div>
+                    <div class="col-md-5 copyright">
+                        <p>© Copyright 2006-2018, SPCA International, Inc. All Rights Reserved.</p>
+                    </div>
+        </div>
+        
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
